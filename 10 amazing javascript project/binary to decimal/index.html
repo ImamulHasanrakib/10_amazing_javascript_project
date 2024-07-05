@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <title>Number conversion</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Number Conversion</h1>
+      <div class="container">
+        <div>
+          <label for="number-input">Enter Number: </label>
+          <input
+            type="text"
+            id="number-input"
+          />
+        </div>
+
+        <div>
+          <label for="conversion-type">Select Conversion Type: </label>
+          <select id="conversion-type">
+            <option value="binary-to-decimal">Binary to Decimal</option>
+            <option value="decimal-to-binary">Decimal to Binary</option>
+            <option value="binary-to-hex">Binary to Hexadecimal</option>
+            <option value="hex-to-binary">Hexadecimal to Binary</option>
+            <option value="decimal-to-hex">Decimal to Hexadecimal</option>
+            <option value="hex-to-decimal">Hexadecimal to Decimal</option>
+          </select>
+        </div>
+        <p id="output"></p>
+
+        <button onclick="convert()">Convert</button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

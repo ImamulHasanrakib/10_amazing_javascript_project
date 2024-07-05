@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Word Counter</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Text Statistics Calculator</h1>
+
+        <div class="main_container">
+          <div>
+            <div>
+              <label for="text-area">Paste your text below:</label>
+              <textarea id="text-area"></textarea>
+            </div>
+
+            <button onclick="calculateStatistics()" id="main_btn">
+              Calculate Statistics
+            </button>
+          </div>
+
+          <table id="statistics-table">
+            <tr>
+              <th>Statistic</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>Total Characters</td>
+              <td id="total-characters"></td>
+            </tr>
+            <tr>
+              <td>Total Words</td>
+              <td id="total-words"></td>
+            </tr>
+            <tr>
+              <td>Total Spaces</td>
+              <td id="total-spaces"></td>
+            </tr>
+            <tr>
+              <td>Total Paragraphs</td>
+              <td id="total-paragraphs"></td>
+            </tr>
+            <tr>
+              <td>Total Sentences</td>
+              <td id="total-sentences"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

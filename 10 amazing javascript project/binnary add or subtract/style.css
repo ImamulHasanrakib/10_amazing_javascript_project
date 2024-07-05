@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #eee;
+  background: #141e30;
+  background: linear-gradient(to right, #243b55, #141e30);
+}
+
+h1 {
+  text-align: center;
+  line-height: 1.4;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select,
+input[type='number'],
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #eee;
+  font: inherit;
+  background-color: transparent;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  outline: none;
+}
+select option {
+  color: #555;
+}
+
+button {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#result {
+  display: block;
+  word-wrap: break-word;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+#inputs-container input {
+  margin-bottom: 20px;
+  color: #eee;
+}
+#inputs-container input::-webkit-input-placeholder {
+  color: #eee;
+}
+#inputs-container input::-moz-placeholder {
+  color: #eee;
+}
+#inputs-container input:-ms-input-placeholder {
+  color: #eee;
+}
+#inputs-container input::-ms-input-placeholder {
+  color: #eee;
+}
+#inputs-container input::placeholder {
+  color: #eee;
+}
+
+.wrapper {
+  padding-block: 50px 20px;
+}
+.wrapper .container {
+  max-width: 575px;
+  margin-inline: auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+.main_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  gap: 50px;
+  margin-top: 50px;
+}
+.main_content > div {
+  display: grid;
+  gap: 20px;
+}

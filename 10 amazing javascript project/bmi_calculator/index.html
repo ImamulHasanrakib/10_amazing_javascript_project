@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <title>BMI calculator</title>
+  </head>
+  <body>
+    <header>
+      <div class="content">
+        <h1>(BMI) Body Mass Index Calculator</h1>
+      </div>
+    </header>
+
+    <div class="about_BMI">
+      <div class="container">
+        <p>
+          BMI, or body mass index, is a measure of body fat based on an
+          individual's height and weight. It's a commonly used tool to determine
+          if a person is underweight, within a healthy weight range, overweight,
+          or obese. BMI is calculated by dividing a person's weight (in
+          kilograms) by their height (in meters) squared.
+        </p>
+        <p>
+          While BMI is a useful tool for assessing body fat, it's important to
+          note that it has limitations. For example, it doesn't take into
+          account the distribution of body fat or factors such as muscle mass,
+          which can affect the accuracy of the measurement. Additionally, BMI
+          may not be as accurate for certain groups of people, such as athletes
+          or older adults.
+        </p>
+        <p>
+          Despite its limitations, BMI can be a useful tool for providing a
+          general idea of a person's weight status and health risk. If you're
+          concerned about your BMI or overall health, it's important to consult
+          with a healthcare professional for personalized recommendations and
+          guidance.
+        </p>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="container">
+        <h2>Convert your height to Centimeters before BMI calculate</h2>
+        <form class="form_2">
+          <div>
+            <label for="length">Length</label>
+            <input
+              type="text"
+              id="length"
+              name="length"
+              placeholder="Enter length..."
+            />
+          </div>
+          <div class="select_wrapper">
+            <select
+              id="from_unit"
+              name="from_unit"
+            >
+              <option value="feet">Feet</option>
+              <option value="cm">Centimeters</option>
+              <option value="mm">Millimeters</option>
+              <option value="m">Meters</option>
+            </select>
+
+            <label for="to_unit">To:</label>
+            <select
+              id="to_unit"
+              name="to_unit"
+            >
+              <option value="cm">Centimeters</option>
+              <option value="mm">Millimeters</option>
+              <option value="m">Meters</option>
+              <option value="feet">Feet</option>
+            </select>
+          </div>
+          <button type="submit">Convert</button>
+        </form>
+        <div
+          id="message2"
+          class="message"
+        ></div>
+      </div>
+      <div class="container">
+        <h1>BMI Calculator</h1>
+        <form class="form_1">
+          <div>
+            <label for="height">Height (cm)</label>
+            <input
+              type="text"
+              id="height"
+              name="height"
+              placeholder="Enter your height in cm"
+            />
+          </div>
+
+          <div>
+            <label for="weight">Weight (kg)</label>
+            <input
+              type="text"
+              id="weight"
+              name="weight"
+              placeholder="Enter your weight in kg"
+            />
+          </div>
+
+          <input
+            type="submit"
+            value="Calculate"
+          />
+        </form>
+
+        <div
+          class="message"
+          id="message"
+        >
+          <p></p>
+        </div>
+      </div>
+      <div class="container">
+        <p>The formula for calculating BMI is as follows:</p>
+        <p>BMI = weight (kg) / height (m)²</p>
+        <p>Once the BMI is calculated, it falls into one of four categories:</p>
+        <ul class="bmi_info">
+          <li>Underweight: BMI less than 18.5</li>
+          <li>Healthy weight: BMI between 18.5 and 24.9</li>
+          <li>Overweight: BMI between 25 and 29.9</li>
+          <li>Obese: BMI greater than or equal to 30</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="info_about_your_BMI">
+      <div class="container">
+        <div class="advice">
+          <h2>Underweight</h2>
+          <p>
+            <span style="color: #ffbe0b">If the BMI is less than 18.5</span>, it
+            is considered underweight. In this case, the user may need to work
+            on gaining weight in a healthy way. Some suggestions to improve
+            their health could be:
+          </p>
+          <ol type="1">
+            <li>
+              Eating more nutrient-dense foods, such as fruits, vegetables, lean
+              protein sources, and healthy fats
+            </li>
+            <li>
+              Incorporating strength training exercises to build muscle mass
+            </li>
+            <li>
+              Avoiding skipping meals and instead eating regularly throughout
+              the day
+            </li>
+            <li>
+              Consulting with a healthcare professional or a registered
+              dietitian to create a personalized plan for gaining weight in a
+              healthy way.
+            </li>
+          </ol>
+          <p>
+            It's important to note that while being underweight can have
+            negative health effects, it's important to approach weight gain in a
+            healthy way and not resort to unhealthy habits or extreme measures.
+          </p>
+        </div>
+        <div class="advice">
+          <h2>Healthy weight/ Normal Weight</h2>
+          <p>
+            <span style="color: #5ec900"
+              >If the BMI is between 18.5 and 24.9</span
+            >, it is considered within the healthy weight range. However, there
+            may still be areas for improvement in terms of overall health and
+            wellness. Some suggestions for maintaining or improving overall
+            health could be:
+          </p>
+          <ol type="1">
+            <li>
+              Eating a balanced diet that includes a variety of nutrient-dense
+              foods, such as fruits, vegetables, lean protein sources, and
+              healthy fats
+            </li>
+
+            <li>
+              Engaging in regular physical activity, such as aerobic exercise,
+              strength training, or yoga
+            </li>
+            <li>
+              Maintaining a healthy sleep schedule and getting enough rest
+            </li>
+            <li>
+              Reducing stress levels through relaxation techniques, such as
+              meditation or deep breathing exercises
+            </li>
+            <li>
+              Regularly visiting a healthcare professional for check-ups and
+              screenings.
+            </li>
+          </ol>
+          <p>
+            It's important to note that everyone's health needs are unique, and
+            a healthcare professional can provide personalized recommendations
+            for maintaining good health.
+          </p>
+        </div>
+        <div class="advice">
+          <h2>Overweight</h2>
+          <p>
+            <span style="color: #ff3300">If the BMI is between 25 and 29.9</span
+            >, it is considered overweight. In this case, the user may need to
+            work on losing weight in a healthy way. Some suggestions to improve
+            their health could be:
+          </p>
+          <ol type="1">
+            <li>
+              Eating a balanced and nutrient-dense diet, while also reducing
+              calorie intake to create a calorie deficit
+            </li>
+
+            <li>
+              Increasing physical activity to burn more calories and promote
+              weight loss, such as engaging in aerobic exercise, strength
+              training, or high-intensity interval training (HIIT)
+            </li>
+
+            <li>Monitoring portion sizes and avoiding overeating</li>
+            <li>
+              Limiting or avoiding processed and high-fat foods, sugary
+              beverages, and alcohol
+            </li>
+            <li>
+              Consulting with a healthcare professional or a registered
+              dietitian to create a personalized plan for losing weight in a
+              healthy way.
+            </li>
+          </ol>
+          <p>
+            It's important to note that weight loss should be approached in a
+            healthy and sustainable way. Rapid or extreme weight loss can have
+            negative health effects, so it's important to work with a healthcare
+            professional to create a safe and effective weight loss plan.
+          </p>
+        </div>
+        <div class="advice">
+          <h2>Obese</h2>
+          <p>
+            <span style="color: #ef233c">If the BMI is greater than 29.9</span>,
+            it is considered obese. In this case, the user may need to work on
+            losing weight in a healthy way to reduce their risk for health
+            complications associated with obesity. Some suggestions to improve
+            their health could be:
+          </p>
+          <ol type="1">
+            <li>
+              Eating a balanced and nutrient-dense diet, while also reducing
+              calorie intake to create a calorie deficit
+            </li>
+
+            <li>
+              Increasing physical activity to burn more calories and promote
+              weight loss, such as engaging in aerobic exercise, strength
+              training, or high-intensity interval training (HIIT)
+            </li>
+
+            <li>Monitoring portion sizes and avoiding overeating</li>
+            <li>
+              Limiting or avoiding processed and high-fat foods, sugary
+              beverages, and alcohol
+            </li>
+            <li>
+              Consulting with a healthcare professional or a registered
+              dietitian to create a personalized plan for losing weight in a
+              healthy way.
+            </li>
+          </ol>
+          <p>
+            It's important to note that weight loss should be approached in a
+            healthy and sustainable way. Rapid or extreme weight loss can have
+            negative health effects, so it's important to work with a healthcare
+            professional to create a safe and effective weight loss plan.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
